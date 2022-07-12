@@ -16,6 +16,10 @@ public class flight_class {
 	public void naa() {
 		System.out.println("priint");
 	}
+	
+	public void naaaa() {
+		System.out.println("xjsbckjsd");
+	}
 
 
 }
