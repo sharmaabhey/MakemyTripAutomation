@@ -9,5 +9,9 @@ public class flight_class {
 	public void naya() {
 		System.out.println("priint");
 	}
+	public void na() {
+		System.out.println("priint");
+	}
+
 
 }
