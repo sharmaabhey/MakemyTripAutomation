@@ -1,76 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-28T16:57:19 IST" name="Default suite" finished-at="2022-06-28T16:57:51 IST" duration-ms="31868">
+  <suite started-at="2024-07-02T19:51:46 IST" name="Default suite" finished-at="2024-07-02T19:56:40 IST" duration-ms="293861">
     <groups>
     </groups>
-    <test started-at="2022-06-28T16:57:19 IST" name="Default test" finished-at="2022-06-28T16:57:51 IST" duration-ms="31868">
+    <test started-at="2024-07-02T19:51:46 IST" name="Default test" finished-at="2024-07-02T19:56:40 IST" duration-ms="293861">
       <class name="Main_test.Main_test_with_Dataprovider">
-        <test-method is-config="true" signature="extent_report()[pri:0, instance:Main_test.Main_test_with_Dataprovider@29e495ff]" started-at="2022-06-28T16:57:19 IST" name="extent_report" finished-at="2022-06-28T16:57:19 IST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="extent_report()[pri:0, instance:Main_test.Main_test_with_Dataprovider@54a7079e]" started-at="2024-07-02T19:51:46 IST" name="extent_report" finished-at="2024-07-02T19:51:46 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extent_report -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:Main_test.Main_test_with_Dataprovider@29e495ff]" started-at="2022-06-28T16:57:19 IST" name="launchapp" finished-at="2022-06-28T16:57:30 IST" duration-ms="10670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="Booking_tickets(java.util.Map)[pri:0, instance:Main_test.Main_test_with_Dataprovider@29e495ff]" started-at="2022-06-28T16:57:31 IST" name="Booking_tickets" data-provider="Flight_data" finished-at="2022-06-28T16:57:47 IST" duration-ms="16484" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Mobile no.=8697423657, Hotel_City=Mumbai, Amenity=Swimming Pool,Wi-Fi,Spa,Barbeque,Bar,Parking,Restaurant,Bus Station Transfers, Email=xyz@gmail.com, Types_of_facility=Hotels, From=Mumbai,India, Flag=Yes, Test_CaseName=TC02, checkin=24,June2022, Departure=18,August 2022, Star_category=5 Star,4 Star,3 Star, Return_date=29,June2022, To=Delhi,India, checkout=26,June2022, Departure_date=22,June2022, Type_of_flight=ROUND TRIP}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method is-config="true" signature="launchapp()[pri:0, instance:Main_test.Main_test_with_Dataprovider@54a7079e]" started-at="2024-07-02T19:51:46 IST" name="launchapp" finished-at="2024-07-02T19:51:49 IST" duration-ms="2495" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[element click intercepted: Element <button data-cy="submit" type="button" id="hsw_search_button" class="primaryBtn font24 latoBold widget...Btn">Search</button> is not clickable at point (759, 413). Other element would receive the click: <div class="DayPicker-Day DayPicker-Day--disabled" tabindex="-1" role="gridcell" aria-label="Thu Jun 0... 2022" aria-disabled="true" aria-selected="false">2</div>
-  (Session info: chrome=102.0.5005.115)
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ABHAYSHARMAJI', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABHAY SHARMA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 921915b0eb9be469534003c9b29c4095]]>
+System info: host: 'DESKTOP-FJ2RHO0', ip: '192.168.137.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+GetHandleVerifier [0x0054A813+48355]
+(No symbol) [0x004DC4B1]
+(No symbol) [0x003E5358]
+(No symbol) [0x004061AC]
+(No symbol) [0x00401EF3]
+(No symbol) [0x00400579]
+(No symbol) [0x00430C55]
+(No symbol) [0x0043093C]
+(No symbol) [0x0042A536]
+(No symbol) [0x004082DC]
+(No symbol) [0x004093DD]
+GetHandleVerifier [0x007AAABD+2539405]
+GetHandleVerifier [0x007EA78F+2800735]
+GetHandleVerifier [0x007E456C+2775612]
+GetHandleVerifier [0x005D51E0+616112]
+(No symbol) [0x004E5F8C]
+(No symbol) [0x004E2328]
+(No symbol) [0x004E240B]
+(No symbol) [0x004D4FF7]
+BaseThreadInitThunk [0x76457BA9+25]
+RtlInitializeExceptionChain [0x77E4C10B+107]
+RtlClearBits [0x77E4C08F+191]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-cy="submit" type="button" id="hsw_search_button" class="primaryBtn font24 latoBold widget...Btn">Search</button> is not clickable at point (759, 413). Other element would receive the click: <div class="DayPicker-Day DayPicker-Day--disabled" tabindex="-1" role="gridcell" aria-label="Thu Jun 0... 2022" aria-disabled="true" aria-selected="false">2</div>
-  (Session info: chrome=102.0.5005.115)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ABHAYSHARMAJI', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABHAY SHARMA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 921915b0eb9be469534003c9b29c4095
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+System info: host: 'DESKTOP-FJ2RHO0', ip: '192.168.137.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+GetHandleVerifier [0x0054A813+48355]
+(No symbol) [0x004DC4B1]
+(No symbol) [0x003E5358]
+(No symbol) [0x004061AC]
+(No symbol) [0x00401EF3]
+(No symbol) [0x00400579]
+(No symbol) [0x00430C55]
+(No symbol) [0x0043093C]
+(No symbol) [0x0042A536]
+(No symbol) [0x004082DC]
+(No symbol) [0x004093DD]
+GetHandleVerifier [0x007AAABD+2539405]
+GetHandleVerifier [0x007EA78F+2800735]
+GetHandleVerifier [0x007E456C+2775612]
+GetHandleVerifier [0x005D51E0+616112]
+(No symbol) [0x004E5F8C]
+(No symbol) [0x004E2328]
+(No symbol) [0x004E240B]
+(No symbol) [0x004D4FF7]
+BaseThreadInitThunk [0x76457BA9+25]
+RtlInitializeExceptionChain [0x77E4C10B+107]
+RtlClearBits [0x77E4C08F+191]
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at Hotel_pages.Hotel_homepage.search(Hotel_homepage.java:133)
-at Main_test.Main_test_with_Dataprovider.Booking_tickets(Main_test_with_Dataprovider.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at Main_test.Base_test.launchapp(Base_test.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
@@ -82,19 +120,143 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 at org.testng.TestNG.runSuites(TestNG.java:1069)
 at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method signature="Booking_tickets(java.util.Map)[pri:0, instance:Main_test.Main_test_with_Dataprovider@54a7079e]" started-at="2024-07-02T19:56:40 IST" name="Booking_tickets" data-provider="Flight_data" finished-at="2024-07-02T19:56:40 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Mobile no.=8697423657, Hotel_City=Mumbai, Amenity=Swimming Pool,Wi-Fi,Spa,Barbeque,Bar,Parking,Restaurant,Bus Station Transfers, Email=xyz@gmail.com, Types_of_facility=Hotels, From=Mumbai,India, Flag=Yes, Test_CaseName=TC02, checkin=24,June2022, Departure=18,August 2022, Star_category=5 Star,4 Star,3 Star, Return_date=29,June2022, To=Delhi,India, checkout=26,June2022, Departure_date=22,June2022, Type_of_flight=ROUND TRIP}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FJ2RHO0', ip: '192.168.137.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+GetHandleVerifier [0x0054A813+48355]
+(No symbol) [0x004DC4B1]
+(No symbol) [0x003E5358]
+(No symbol) [0x004061AC]
+(No symbol) [0x00401EF3]
+(No symbol) [0x00400579]
+(No symbol) [0x00430C55]
+(No symbol) [0x0043093C]
+(No symbol) [0x0042A536]
+(No symbol) [0x004082DC]
+(No symbol) [0x004093DD]
+GetHandleVerifier [0x007AAABD+2539405]
+GetHandleVerifier [0x007EA78F+2800735]
+GetHandleVerifier [0x007E456C+2775612]
+GetHandleVerifier [0x005D51E0+616112]
+(No symbol) [0x004E5F8C]
+(No symbol) [0x004E2328]
+(No symbol) [0x004E240B]
+(No symbol) [0x004D4FF7]
+BaseThreadInitThunk [0x76457BA9+25]
+RtlInitializeExceptionChain [0x77E4C10B+107]
+RtlClearBits [0x77E4C08F+191]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FJ2RHO0', ip: '192.168.137.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+GetHandleVerifier [0x0054A813+48355]
+(No symbol) [0x004DC4B1]
+(No symbol) [0x003E5358]
+(No symbol) [0x004061AC]
+(No symbol) [0x00401EF3]
+(No symbol) [0x00400579]
+(No symbol) [0x00430C55]
+(No symbol) [0x0043093C]
+(No symbol) [0x0042A536]
+(No symbol) [0x004082DC]
+(No symbol) [0x004093DD]
+GetHandleVerifier [0x007AAABD+2539405]
+GetHandleVerifier [0x007EA78F+2800735]
+GetHandleVerifier [0x007E456C+2775612]
+GetHandleVerifier [0x005D51E0+616112]
+(No symbol) [0x004E5F8C]
+(No symbol) [0x004E2328]
+(No symbol) [0x004E240B]
+(No symbol) [0x004D4FF7]
+BaseThreadInitThunk [0x76457BA9+25]
+RtlInitializeExceptionChain [0x77E4C10B+107]
+RtlClearBits [0x77E4C08F+191]
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:144)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:574)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:560)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:662)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at Main_test.Base_test.launchapp(Base_test.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Booking_tickets -->
-        <test-method is-config="true" signature="closeapp()[pri:0, instance:Main_test.Main_test_with_Dataprovider@29e495ff]" started-at="2022-06-28T16:57:47 IST" name="closeapp" finished-at="2022-06-28T16:57:51 IST" duration-ms="3721" status="PASS">
+        <test-method is-config="true" signature="closeapp()[pri:0, instance:Main_test.Main_test_with_Dataprovider@54a7079e]" started-at="2024-07-02T19:56:40 IST" name="closeapp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1719930400629" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeapp -->
-        <test-method is-config="true" signature="extent_end()[pri:0, instance:Main_test.Main_test_with_Dataprovider@29e495ff]" started-at="2022-06-28T16:57:51 IST" name="extent_end" finished-at="2022-06-28T16:57:51 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="extent_end()[pri:0, instance:Main_test.Main_test_with_Dataprovider@54a7079e]" started-at="2024-07-02T19:56:40 IST" name="extent_end" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1719930400667" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extent_end -->

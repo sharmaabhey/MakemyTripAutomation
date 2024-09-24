@@ -11,7 +11,7 @@ public class Data_Supplier {
 	@DataProvider(name = "Flight_data")
 
     public Object[][] datasupplier() throws IOException{
-        String testInputSheetPath = "C:\\Users\\ABHAY SHARMA\\coforge-workspace\\com.Booking_flight\\Data_file\\Flight_data.xlsx";
+        String testInputSheetPath = "F:\\abhay\\com.Booking_flight\\Data_file\\Flight_data.xlsx";
         // String sheetName = FileReaderManager.getInstance().getConfiReader().getSheetName();
         String sheetName = "Flight_sheet";
         ExcelReader xl = new ExcelReader(testInputSheetPath);

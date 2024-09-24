@@ -9,7 +9,7 @@
           <include name="extent_end"/>
           <include name="launchapp"/>
           <include name="closeapp"/>
-          <include name="Booking_tickets" invocation-numbers="0"/>
+          <include name="Booking_tickets"/>
         </methods>
       </class> <!-- Main_test.Main_test_with_Dataprovider -->
     </classes>
